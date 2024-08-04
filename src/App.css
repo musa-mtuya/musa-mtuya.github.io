@@ -3,3 +3,53 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 13px;
+  font-family: 'Roboto Mono',Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.avator {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgb(0, 100, 223);
+}
+
+.avator-globe {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(90deg ,rgba(23,37,84, 0.1), rgba(96,165,250, 0.35), rgba(23,37,84,0.1));
+  z-index: 100;
+  box-shadow: inset 5px 5px 10px rgba(23,37,84, 0.519);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.avator-globe-45 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(180deg ,rgba(23,37,84, 0.1), rgba(96,165,250, 0.35), rgba(23,37,84,0.1));
+  z-index: 100;
+  box-shadow: inset 5px 5px 10px rgba(23,37,84, 0.519);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.text-opacity {
+  opacity: .9;
+}
