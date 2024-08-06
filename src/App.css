@@ -45,11 +45,6 @@ body {
   border-radius: 50%;
 }
 
-.wrapper {
-  width: 1000px;
-  margin: 0px auto;
-}
-
 .text-opacity {
   opacity: .9;
 }
