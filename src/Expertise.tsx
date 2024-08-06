@@ -1,3 +1,7 @@
+interface Level {
+  level: number;
+}
+
 const skills = [
   { name: "Java", level: 90 },
   { name: "Kotlin", level: 85 },
@@ -8,7 +12,7 @@ const skills = [
   { name: "CSS", level: 85 },
 ];
 
-const ProgressBar = ({ level }) => (
+const ProgressBar: React.FC<Level> = ({ level }) => (
   <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
     <div
       className="bg-blue-600 h-4 rounded-full"

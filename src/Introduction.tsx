@@ -13,7 +13,7 @@ const Introduction = () => (
           frameworks.
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           In addition to my development capabilities, I have a strong background
           in design, utilizing tools like Adobe Illustrator to create visually
           appealing and user-friendly interfaces. My holistic approach to web
@@ -21,7 +21,7 @@ const Introduction = () => (
           design, ensuring a cohesive and engaging user experience.
         </div>
 
-        <div className="mt-2">
+        <div className="mt-4">
           Whether I'm coding the backend logic or designing the frontend
           aesthetics, I strive to deliver high-quality solutions that meet and
           exceed client expectations. Feel free to explore my projects and get

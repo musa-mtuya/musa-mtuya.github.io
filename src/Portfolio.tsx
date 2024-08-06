@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+import { FC } from "react";
+
 const projects = [
   {
     title: "Project One",
@@ -22,7 +25,19 @@ const projects = [
   },
 ];
 
-const ProjectCard = ({ title, description, technologies, link }) => (
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  link: string;
+}
+
+const ProjectCard: FC<Project> = ({
+  title,
+  description,
+  technologies,
+  link,
+}) => (
   <div className="bg-blue-50 shadow-md rounded-lg overflow-hidden mb-6">
     <div className="p-6">
       <h3 className="font-bold mb-1">{title}</h3>
