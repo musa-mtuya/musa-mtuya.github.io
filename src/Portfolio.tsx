@@ -2,25 +2,32 @@ import { FC } from "react";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Onboard Super Intendence",
     description:
-      "This is a brief description of Project One. It showcases my skills in Java and Spring Boot.",
-    technologies: ["Java", "Spring Boot", "MySQL"],
-    link: "https://example.com/project-one",
+      "Website project for Obs organization showcasing their product and services in Inspection and Transportation",
+    technologies: ["PHP", "Apache", "Google Cloud"],
+    link: "https://obs.co.tz/",
   },
   {
-    title: "Project Two",
+    title: "Tumaini Media",
     description:
-      "This is a brief description of Project Two. It highlights my expertise in Kotlin and Android development.",
-    technologies: ["Kotlin", "Android", "Firebase"],
-    link: "https://example.com/project-two",
+      "An Android Application to show live tv and Radio streams From local channel Tumaini TV and Radio",
+    technologies: ["Java", "AWS", "MySQL"],
+    link: "https://play.google.com/store/apps/details?id=com.tumainimedia&hl=en",
   },
   {
-    title: "Project Three",
+    title: "Mofet Tanzania",
     description:
-      "This is a brief description of Project Two. It highlights my expertise in Kotlin and Android development.",
+      "A Website Project for Educational Organization dealing with setting school examiniations, guidance, counselling etc",
+    technologies: ["PHP", "Apache", "Google Cloud"],
+    link: "https://mofet.ac.tz/",
+  },
+  {
+    title: "Kibega",
+    description:
+      "An E-commerce project, for kibega team, intended to connect buyer and sellers in Vegitable Transactions",
     technologies: ["Kotlin", "Android", "Firebase"],
-    link: "https://example.com/project-two",
+    link: "https://play.google.com/store/apps/details?id=com.kibega&hl=en",
   },
 ];
 
@@ -39,7 +46,7 @@ const ProjectCard: FC<Project> = ({
 }) => (
   <div className="bg-blue-50 shadow-md rounded-lg overflow-hidden mb-6">
     <div className="p-6">
-      <h3 className="font-bold mb-1">{title}</h3>
+      <h3 className="font-bold mb-1 text-blue-800">{title}</h3>
       <p className="text-gray-700 mb-4">{description}</p>
       <div className="mb-4">
         {technologies.map((tech) => (
@@ -53,11 +60,11 @@ const ProjectCard: FC<Project> = ({
       </div>
       <a
         href={link}
-        className="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+        className="inline-block  text-teal-700 font-semibold py-2"
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Project
+        VIEW PROJECT
       </a>
     </div>
   </div>

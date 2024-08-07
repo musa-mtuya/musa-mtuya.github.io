@@ -13,9 +13,9 @@ const skills = [
 ];
 
 const ProgressBar: React.FC<Level> = ({ level }) => (
-  <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+  <div className="w-full bg-gray-200 rounded-full h-2 mb-4">
     <div
-      className="bg-blue-600 h-4 rounded-full"
+      className="bg-blue-600 h-2 rounded-full"
       style={{ width: `${level}%` }}
     ></div>
   </div>
